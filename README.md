@@ -13,14 +13,14 @@ The PHP Color class is a versatile utility for handling HTML color values. It pr
 
 ### Initialization
 
-```
+```php
 // Initialize with a color value
 $myColor = new Color('blue');
 ```
 
 ### Getters and Setters
 
-```
+```php
 // Get color name
 $name = $myColor->get_name();
 
@@ -49,7 +49,7 @@ $myColor->set_lightness(75);
 
 ### Formatting
 
-```
+```php
 // Format color in different representations
 $nameFormat = $myColor->format('name');
 $hexFormat = $myColor->format('hex');
@@ -59,7 +59,7 @@ $hslFormat = $myColor->format('hsl');
 
 ### Examples
 
-```
+```php
 // Example: Initializing with a hex value
 $myColor = new Color('#ff0000');
 
@@ -75,7 +75,7 @@ $hexFormat = $myColor->format('hex'); // Outputs: #80ff00
 ### Exception Handling
 The `ColorException` class is thrown for invalid color inputs. Make sure to handle exceptions appropriately in your code.
 
-```
+```php
 try {
     $invalidColor = new Color('invalid_color');
 } catch (ColorException $e) {
